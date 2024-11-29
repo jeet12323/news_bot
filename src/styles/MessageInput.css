@@ -1,0 +1,33 @@
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: var(--panel-bg); /* Matches current theme */
+    border-top: 1px solid #40404f;
+  }
+  
+  .message-input input {
+    flex: 1; /* Prevents layout stretching issues */
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #3a3a52;
+    color: #fff;
+    outline: none;
+  }
+  
+  .message-input button {
+    margin-left: 12px;
+    padding: 12px;
+    background: #6a5acd;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .message-input button:hover {
+    background: #836fff;
+  }
+  

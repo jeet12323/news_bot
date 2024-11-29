@@ -1,0 +1,53 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensures app takes full height */
+  width: 100vw; /* Ensures app takes full width */
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: var(--font-size, 16px);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Prevents layout breaking */
+}
+
+:root {
+  --background: #1e1e2f;
+  --text: #fff;
+  --panel-bg: #2c2c3e;
+}
+
+.app.light {
+  --background: #f0f0f0;
+  --text: #000;
+  --panel-bg: #ddd;
+}
+.chat-container {
+  display: flex;
+}
+
+.chat-list {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.chat-list-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chat-list-item:hover {
+  background-color: #f0f0f0;
+}
+
+.chat-display {
+  flex-grow: 1;
+  padding: 20px;
+  max-width: 800px;
+}
